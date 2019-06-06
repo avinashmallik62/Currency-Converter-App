@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         
         Double RupeeAmount = dollarAmountDouble * 69.29 ;
         
-        Toast.makeText(MainActivity.this,"₹" + RupeeAmount.toString(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this,"₹" + String.format("%.2f",RupeeAmount), Toast.LENGTH_SHORT).show();
         
         Log.i("amount",dollarAmountEditText.getText().toString());
 
